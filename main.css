@@ -1,0 +1,395 @@
+/*?=======================================================================*/
+/*?======================      Global Styling       ======================*/
+/*?=======================================================================*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*?=======================================================================*/
+/*?======================      Navigation Bar       ======================*/
+/*?=======================================================================*/
+
+nav {
+  max-width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+/*?=======================================================================*/
+/*?======================    Navigation Bar : Logo  ======================*/
+/*?=======================================================================*/
+
+.logo {
+  padding: 1.5em;
+  color: #fb6d3a;
+}
+
+.logo-text {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo-text:nth-child(1) {
+  border-bottom: 3px solid gray;
+}
+
+/*?=======================================================================*/
+/*?======================  Navigation Bar : Search  ======================*/
+/*?=======================================================================*/
+
+.search-bar {
+  margin: auto;
+  height: 45px;
+  width: 600px;
+  max-width: 600px;
+  border-radius: 50px;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.search-logo {
+  margin-right: 10px;
+  color: #fb6d3a;
+}
+
+.search-text {
+  margin: auto;
+  width: 500px;
+  max-width: 500px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+/*?=======================================================================*/
+/*?======================    Navigation Bar : Nav   ======================*/
+/*?=======================================================================*/
+
+.nav {
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-text {
+  display: inline-block;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-text:hover {
+  color: #fb6d3a;
+}
+
+.burger {
+  display: inline-block;
+  padding: 1em;
+  padding-bottom: 1.5em;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fb6d3a;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+.burger:hover ~ .nav-text-container {
+  color: #fb6d3a;
+}
+
+/*?=======================================================================*/
+/*?======================         Main              ======================*/
+/*?=======================================================================*/
+
+.main-container {
+  margin: 3em auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.main {
+  width: 65%;
+  padding: 1em;
+  background-color: wheat;
+  border-radius: 30px 0 0 30px;
+}
+
+.cart {
+  width: 35%;
+  background-color: #e5dfdf; /*#916dd5*/
+  border-radius: 0 30px 30px 0;
+}
+
+/*?=======================================================================*/
+/*?=====================      Address & Time        ======================*/
+/*?=======================================================================*/
+
+.address-time {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em;
+  border-radius: 25px;
+  background-color: #d89cf6; /*#d89cf6*/
+  /* color: white; */
+}
+
+.address {
+  display: flex;
+  height: 30px;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.address p {
+  display: inline;
+  margin: auto 0;
+  font-weight: 500;
+}
+
+.time {
+  display: flex;
+  height: 30px;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.time p {
+  display: inline;
+  margin: auto 0;
+  font-weight: 500;
+}
+
+select {
+  outline: none;
+  border: 0px;
+  background-color: transparent;
+  color: black;
+}
+
+/*?=======================================================================*/
+/*?=====================      Food Menu Sec.        ======================*/
+/*?=======================================================================*/
+
+.section-title p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.section-title h4 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #ff5e18;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.1em;
+}
+.section-title h4::before {
+  width: 80px;
+  height: 1.5px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
+}
+.section-title h4::before,
+.section-title h4::after {
+  position: absolute;
+  content: "";
+  background-color: #ff5e18;
+}
+#myTabContent {
+  margin-top: 50px;
+}
+.menu_tab {
+  width: auto;
+  margin: 0 auto;
+}
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+.nav-item a {
+  color: #333;
+}
+.menu_tab .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #ff5e18;
+  border-color: #ff5e18;
+}
+.single_menu_list {
+  position: relative;
+  /* padding-left: 190px; */
+  margin-bottom: 110px;
+}
+
+.single_menu_list img {
+  max-width: 30%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  border: 1px solid #ddd;
+  padding: 3px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.single_menu_list:hover img {
+  border-radius: 0;
+  transition: 0.4s;
+}
+
+.single_menu_list h4 {
+  font-size: 20px;
+  border-bottom: 1px dashed #333;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.single_menu_list h4 span {
+  float: right;
+  font-weight: bold;
+  color: #ff5e18;
+  font-style: italic;
+}
+
+.shop-item-image {
+  /* height: 75%; */
+  width: 100%;
+}
+
+/* ============================================================================ */
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  /* margin-right: 1.5em; */
+  padding-bottom: 10px;
+  /* margin-top: 1em; */
+  width: 90%;
+  margin: 2em auto 0;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 35%;
+}
+
+.cart-price {
+  width: 15%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  /* margin-right: 10px; */
+  width: 90%;
+  margin: 1em auto 0;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
