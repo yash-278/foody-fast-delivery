@@ -55,7 +55,7 @@ function addToCartClicked(event) {
   var button = event.target;
   var shopItem = button.parentElement.parentElement;
   var title = shopItem.getElementsByClassName("shop-item-title")[0].innerText;
-  title = title.substring(0, title.indexOf("$"));
+  title = title.substring(0, title.indexOf("₹"));
   var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
   // var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
   addItemToCart(title, price /*imageSrc*/);
@@ -105,11 +105,11 @@ function updateCartTotal() {
     var quantityElement = cartRow.getElementsByClassName(
       "cart-quantity-input"
     )[0];
-    var price = parseFloat(priceElement.innerText.replace("$", ""));
+    var price = parseFloat(priceElement.innerText.replace("₹", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
   }
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName("cart-total-price")[0].innerText =
-    "$" + total;
+    "₹" + total;
 }

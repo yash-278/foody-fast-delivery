@@ -248,7 +248,7 @@ select {
 .single_menu_list {
   position: relative;
   /* padding-left: 190px; */
-  margin-bottom: 110px;
+  margin-bottom: 2em;
 }
 
 .single_menu_list img {
@@ -392,4 +392,42 @@ select {
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
+}
+
+/* ===================================================================================== */
+
+@media (max-width: 1000px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .main {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+  .cart {
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 60%;
+  }
+  .logo-text {
+    font-size: 0.9rem;
+  }
+  .nav {
+    padding: 0.1em;
+    width: 40%;
+  }
+  .burger {
+    padding: 0.1em;
+  }
+  .burger div {
+    width: 25px;
+  }
+  .nav-text {
+    font-size: 1rem;
+  }
 }
